@@ -27,7 +27,7 @@ app.get('/todos', function(req, res){
 // Get specific todo task
 app.get('/todos/:id', function(req, res){
   var todoId = parseInt(req.params.id, 10);
-  var matchTodo;
+  var matchedTodo;
 
   todos.forEach(function(todo){
     if (todoId === todo.id){
